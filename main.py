@@ -29,6 +29,7 @@ for i in range(move_position_row, move_position_row + sheet.max_row + 1):
         if index == len(number_list):
             break
         sheet2.cell(row=i, column=j).value = number_list[index]
+        #adding borders for every coresponding cell of the table
         if i != move_position_row and j != move_position_column:
             sheet2.cell(row=i, column=j).border = thin_border
         index += 1
